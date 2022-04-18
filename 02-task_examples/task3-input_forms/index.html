@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Use forms</title>
+</head>
+
+<body>
+    <h1>General registration information</h1>
+
+    <form action="#" id="my_form" onsubmit="alert(decodeURI(new
+    URLSearchParams(Array.from(new
+    FormData(document.getElementById('my_form')))).toString()));return
+    false;">
+        <fieldset>
+            <legend><strong>Information about user</strong></legend>
+            <label for="name">What is your name?</label> 
+            <br>
+            <input type="text" name="registration_login" id="name"> 
+            <br>
+            <label for="surname">What is your surname?</label> 
+            <br>
+            <input type="text" name="registration_login" id="surname"> 
+            <br>
+            <label for="email">What is your e-mail?</label> <br>
+            <input type="email" name="registration_email" id="email"> 
+            <br>
+            <label for="phone">What is your phone?</label> <br>
+            <input type="tel" name="registration_phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            required placeholder="067-916-63-24">
+            <small>Format: 067-916-63-24</small> 
+            <br>
+            <label for="password">Create a password</label> <br>
+            <input type="password" name="registration_password" id="password">
+            <br>
+            <label for="passwordconfirm">Confirm a password</label> <br>
+            <input type="password" name="registration_password_confirm" id="passwordconfirm">
+            <br>
+            <label for="secretword">What is your secret word</label> <br>
+            <input type="password" name="registration_password_word" id="secretword">
+            <br>
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Other information about user</strong></legend>
+            <label for="birth">Enter your birth date</label> <br>
+            <input type="date" name="dataBirth" id="birth">
+            <br>
+            <label for="age">Enter your age</label> <br>
+            <input type="number" min="1" max="150" name="your_age" id="age">
+            <br>
+
+            <fieldset>
+                <legend>Choose your gender</legend>
+                <input type="radio" name="gender" id="exp1" value="male">
+                <label for="exp1">male</label>
+                <br>
+                <input type="radio" name="gender" id="exp2" value="female">
+                <label for="exp2">female</label>
+                <br>
+            </fieldset>
+            <label for="site">Write your favorite website</label> <br>
+            <input type="url" name="favorite_website" id="site" placeholder="www.google.com">
+            <br>
+            <label for="img">Add your image</label> <br>
+            <input type="file" name="your_image" id="img">
+            <br>
+
+            <fieldset>
+            <legend>What your favorite drink</legend>
+            <input type="checkbox" name="drink" id="drink1" value="male">
+            <label for="drink1">beer</label>
+            <br>
+            <input type="checkbox" name="drink" id="drink2" value="female">
+            <label for="drink2">juice</label>
+            <br>
+            <input type="checkbox" name="drink" id="drink3" value="female">
+            <label for="drink3">water</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>What your favorite color</legend>
+                <input type="color" name="favorite_color" id="color1" value="male">
+                <label for="color1"></label>
+                <br>
+            </fieldset>
+            <label for="number1">Choose the number from 1 to 5</label> <br>
+            <input type="range" min="1" max="5" name="Choose_number" id="number1">
+            <br>
+            <label for="position">What your status?</label>
+            <br> 
+            <select name="status" id="position">
+                <option value="single">single</option>
+                <option value="married">married</option>
+                <option value="divorced">divorced</option>
+                <option value="widower">widower</option>
+                <option value="widow">widow</option>
+                <option hidden disabled selected>Choose one</option>
+            </select>
+            <br>
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Final information</strong></legend>
+            <label for="final">Adding information about yourself</label> <br>
+            <textarea name="Final_information" id="final"></textarea>
+            <br>
+        </fieldset>
+        <fieldset>
+            <input type="submit" value="Submit registration">
+        </fieldset>
+        
+    </form>
+
+</body>
+
+</html>
