@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+    <link rel="stylesheet" href="assets/css/_variables.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/plugins/panel/panel.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Add product to card</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-8">
+                                <input type="text" class="form-control" placeholder="Enter product title"
+                                    id="prod_name">
+                            </div>
+                            <div class="col-2">
+                                <input type="number" class="form-control" placeholder="Amount" min="1" value="1"
+                                    id="prod_qty">
+                            </div>
+                            <div class="col-2">
+                                <input type="number" class="form-control" placeholder="Price" min="0" id="prod_price">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-footer d-flex justify-content-end">
+                        <button class="btn btn-info" onclick="checkAndAddProduct()">Add</button>
+                    </div>
+                </div>
+
+                <div class="card mt-4">
+                    <div class="card-header d-flex justify-content-between">
+                        <h4>CART</h4>
+                        <button class="btn btn-primary" onclick="changeSort()">Sort</button>
+                    </div>
+                    <div class="card-body">
+                        <!-- <ul id="cart_list"></ul> -->
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <!-- <td>#</td>  in html and <td>${i+1}</td> in js-->
+                                    <td>Name</td>
+                                    <td class="text-center">Buy</td>
+                                    <td class="text-end">Price</td>
+                                    <td class="text-center">Qty</td>
+                                    <td class="text-end">Total</td>
+                                    <td class="text-end">Action</td>
+                                </tr>
+                            </thead>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="4"><b>Total Buyed</b></td>
+                                    <td class="text-end"><b><span id="total_buyed"></span></b></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4"><b>Total Notbuyed</b></td>
+                                    <td class="text-end"><b><span id="total_notbuyed"></span></b> </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4"><b>Total</b></td>
+                                    <td class="text-end"><b><span id="total"></span></b></td>
+                                </tr>
+                            </tfoot>
+                            <tbody id="cart_list"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between">
+                        <h4>Bill</h4>
+                        <button class="btn btn-primary" onclick="printBill()">Print</button>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-5">
+                                <label for="prod_discount">Your discount:</label>
+                                <input type="number" class="form-control" placeholder="Discount" min="0" value="0"
+                                    id="prod_discount">
+                            </div>
+                            <div class="col-6">
+                                <label for="prod_select">Choose discount:</label>
+                                <select name="status" class="form-control" value="" id="prod_select">
+                                    <option value="none">None</option>
+                                    <option value="persent">Persent</option>
+                                    <option value="fixed">Fixed</option>
+                                    <!-- <option hidden disabled selected>Choose one</option> -->
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <ul id="bill_wrapper"></ul>
+                    </div>
+                    <div class="card-footer" style="font-size: 18px;">
+                        <b>Total: <span id="total_bill"></span></b>
+                    </div>
+                    <div class="card-footer" style="font-size: 18px;">
+                        <b>Total with discount: </b><span id="total_bill_with_discount"></span>
+                    </div>
+                    <div class="card-footer" style="font-size: 14px;">
+                        PDV 20% : <span id="pdv_bill"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- </div> -->
+
+    <script src="assets/plugins/panel/panel.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- <script src="assets/js/bootstrap.bundle.min.js"></script> -->
+</body>
+
+</html>

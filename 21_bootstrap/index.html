@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/responsive.min.css">
+    <link rel="stylesheet" href="assets/css/_variables.scss">
+</head>
+
+<body class="body" style="background: rgba(194, 224, 224, 0.7);">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="opacity: 0.9;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="https://pbs.twimg.com/profile_images/1062794160305065984/rkrfodhJ_400x400.jpg"
+                        width="120px" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="d-flex container-fluid" style="padding: 145px 0 0px;">
+        <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                <svg class="bi me-2" width="40" height="32" fill="#fff">
+                    <use xlink:href="assets/images/icons/icons.svg#bootstrap"></use>
+                </svg>
+                <span class="fs-4">Sidebar</span>
+            </a>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active" aria-current="page">
+                        <!-- Иконка с шрифта Fontawesome -->
+                        <i class="fa fa-home me-2"></i>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-white">
+                        <svg class="bi me-2" width="16" height="16" fill="#fff">
+                            <use xlink:href="assets/images/icons/icons.svg#speedometer2"></use>
+                        </svg>
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-white">
+                        <svg class="bi me-2" width="16" height="16" fill="#fff">
+                            <use xlink:href="assets/images/icons/icons.svg#table"></use>
+                        </svg>
+                        Orders
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-white">
+                        <svg class="bi me-2" width="16" height="16" fill="#fff">
+                            <use xlink:href="assets/images/icons/icons.svg#grid"></use>
+                        </svg>
+                        Products
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-white">
+                        <svg class="bi me-2" width="16" height="16" fill="#fff">
+                            <use xlink:href="assets/images/icons/icons.svg#people-circle"></use>
+                        </svg>
+                        Customers
+                    </a>
+                </li>
+                <!-- Иконка с шрифта Fontawesome -->
+                <li>
+                    <a href="#" class="nav-link text-white">
+                        <i class="fa fa-users me-2"></i>
+                        Users
+                    </a>
+                </li>
+            </ul>
+            <hr>
+            <div class="dropdown">
+                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                    id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                    <strong>mdo</strong>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+                    <li><a class="dropdown-item" href="#">New project...</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content p-4">
+            <div class="pb-3">
+                <h1>Рыбалка, охота и отдых в Норвегии</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Library</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Data</li>
+                    </ol>
+                </nav>
+
+                <div class="row mb-8">
+                    <h3>ВИДЫ МОРСКОЙ РЫБЫ В НОРВЕГИИ</h3>
+                    <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+                        <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                            <div class="card-header">Зубатка</div>
+                            <div class="card-body">
+                                <img src="https://lh4.googleusercontent.com/ry41LDrlBAGpIfnM3XANcuelnrFuEOpk1Os84mdVUvLBmybTP-IcnLtKXrR6oQ0SGU5cHHuyBwPG97y10tCe29aCzmq26NgDSIfGaxkwoWf6PVs-I628DkpWu--Yhi2o-imfmSf2"
+                                    class="card-img-top" alt="...">
+                                <h5 class="card-title">Особенности ловли</h5>
+                                <p class="card-text">Этот вид обитает в водах с температурой от 1 до 8 градусов на
+                                    глубине от 20 до 400 м.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+                        <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                            <div class="card-header">Палтус</div>
+                            <div class="card-body">
+                                <img src="https://lh6.googleusercontent.com/QFE2UD19syT9q51Klta1F7Gi4G5dPm3fGDcDoEZlPkzGpAd1J_sDqdqtMYPnejT26kvKBhdtRHM5oxVLrLTfLyyZozh2Hsa5CjasIHcLYxGMnmDHXVhv2V2--LZd714gl2xd1t6h"
+                                    class="card-img-top" alt="...">
+                                <h5 class="card-title">Место ловли</h5>
+                                <p class="card-text">У берегов Норвегии, Фареры, Датский пролив, раздел с Гренландией,
+                                    Давидский пролив, воды Ньюфаундленда.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+                        <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+                            <div class="card-header">Сайда</div>
+                            <div class="card-body">
+                                <img src="https://lh6.googleusercontent.com/LYx46R2psS6JvqE7PlSoZM9njJkqvqfm6wk-E4dATv4uXU-9olrmrm4DfVxdqouC-vrMaSI4q07dutv3fst8Z46cwNdXybMU-BStapT80OG3AFR3F_31eot8F_WvNsDb790X_zoP"
+                                    class="card-img-top" alt="...">
+                                <h5 class="card-title">Особенности ловли</h5>
+                                <p class="card-text">Сайда очень хорошо клюет на приманку, за один раз можно вытянуть до
+                                    5 рыб, на глубине можно поймать трофейную тушку размером до 1,25 м.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+                        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                            <div class="card-header">Треска</div>
+                            <div class="card-body">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUvc2xcQtTA6D3BFFN3r9tjQI0MB6OXouEUQ&usqp=CAU"
+                                    height="127px" class="card-img-top" alt="...">
+                                <h5 class="card-title">На что ловить</h5>
+                                <p class="card-text">Живая приманка: мойва, песчанка, червь, ракообразные, иглокожие,
+                                    моллюск, молодняк трески.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+                        <div class="card text-dark bg-warning mb-3" style="max-width: 18rem;">
+                            <div class="card-header">Семга</div>
+                            <div class="card-body">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD--xmYzAxNKttEHALb4VW-15jvWz2TZHfng&usqp=CAU"
+                                    height="103px" class="card-img-top" alt="...">
+                                <h5 class="card-title">Место ловли</h5>
+                                <p class="card-text">Только пресная вода, ловить можно круглый год, на блесну. Длина
+                                    одной тушки может составлять полтора метра. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-md-8 col-sm-14 col-lg-4 col-xxl-2"></div> -->
+                    <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+                        <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                            <div class="card-header">Морской черт</div>
+                            <div class="card-body">
+                                <img src="https://lh5.googleusercontent.com/Cy5Ftoxqh_2m0jwDSPfc6JaZSoC45P5wvfBuZAuiISRq2xt6P0Kxhgj1DsyB5lP86VDvc4zQtveQZJaZYF55VxpyDHVOu6tQUioXQkQd188YRaatpVErsQ9yWR-sKT8FZ8wPf8y4"
+                                    height="80px" class="card-img-top" alt="...">
+                                <h5 class="card-title">Самая опасная рыба Норвегии</h5>
+                                <p class="card-text">Съедобная часть морской рыбы – только хвост. При этом голова с
+                                    сотнями острых зубом составляет половину всей длины.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="row md-4">
+                <div class="col-md-6 col-sm-12 col-lg-4">
+                    <div class="card">
+                        <img src="https://scontent.fdnk4-1.fna.fbcdn.net/v/t1.6435-9/78922812_116332196510513_2698626324007747584_n.png?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=T0zD4gn9mJ0AX_Sl_mE&_nc_ht=scontent.fdnk4-1.fna&oh=232964ca2d580e9f0ed81abc3fd47e1b&oe=61A06ABB"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Отдых в Норвегии</h5>
+                            <p class="card-text">Путешествие по Норвегии на комфортабельной яхте подарит вам много
+                                незабываемых впечатлений. Мы предлагаем широкий спектр проживания, от недорогих
+                                апартаментов (палатки, вигвамы с печкой, дачи, квартиры, отели) до роскошной круизной
+                                яхты.</p>
+                            <a href="https://www.facebook.com/Norwayfishing228" target="_blank"
+                                class="btn btn-primary">Перейти на страницу</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-lg-4">
+                    <div class="card">
+                        <img src="https://scontent.fdnk4-1.fna.fbcdn.net/v/t1.6435-9/78631547_116329276510805_4516032677224120320_n.png?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=oygwAkyiTKgAX8u0nlD&_nc_ht=scontent.fdnk4-1.fna&oh=51660066a8dbccb88f5df6475e570519&oe=61A11DD0"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Рыбалка в Норвегии</h5>
+                            <p class="card-text">Рыбалка на норвежских фьордах и в открытом море подарит вам богатый
+                                улов и доставит каждому несравненное ни с чем удовольствие. Мы поделимся с вами всеми
+                                тонкостями рыбалки в Норвегии.</p>
+                            <a href="https://www.facebook.com/Norwayfishing228" target="_blank"
+                                class="btn btn-primary">Перейти на страницу</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-lg-4">
+                    <div class="card">
+                        <img src="https://scontent.fdnk4-1.fna.fbcdn.net/v/t1.6435-9/79189382_119190709557995_480732279237246976_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=A4DfpFYeJmcAX8J7K0O&tn=RE7sKtFiO0fc4_HQ&_nc_ht=scontent.fdnk4-1.fna&oh=ba716d2969342caaac360950d4caafe5&oe=619F5B5E"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Станьте рыбаком хотя бы на один день!</h5>
+                            <p class="card-text"> Присоединяйся к ловле морских раков, креветок, крабов,
+                                омаров, скумбрии. Здесь вы получите уникальное представление о повседневной жизни
+                                профессионального рыболова и жизни на море. Улов можно приготовить прямо на борту и
+                                продегустировать.</p>
+                            <a href="https://www.facebook.com/Norwayfishing228" target="_blank"
+                                class="btn btn-primary">Перейти на страницу</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                            Featured
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-dark table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">First</th>
+                                        <th scope="col">Last</th>
+                                        <th scope="col">Handle</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td> <button class="btn btn-sm btn-danger"><i
+                                                    class="fa fa-trash-alt me-2"></i>Remove</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td colspan="2">Larry the Bird</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col">
+                    <form action="#">
+                        <div class="card">
+                            <div class="card-header">Some form here</div>
+                            <div class="card-body">
+
+                                <div class="row g-3">
+                                    <div class="col-auto">
+                                        <label for="staticEmail2" class="visually-hidden">Email</label>
+                                        <input type="text" readonly class="form-control-plaintext" id="staticEmail2"
+                                            value="email@example.com">
+                                    </div>
+                                    <div class="col-auto">
+                                        <label for="inputPassword2" class="visually-hidden">Password</label>
+                                        <input type="password" class="form-control" id="inputPassword2"
+                                            placeholder="Password">
+                                    </div>
+                                    <div class="col-auto">
+                                        <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label for="formFileLg" class="form-label">Large file input example</label>
+                                    <input class="form-control form-control-lg" id="formFileLg" type="file">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between">
+                                <button type="submit" class="btn btn-success">Send</button>
+                                <button type="reset" class="btn btn-warning">Cancel</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-border text-secondary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-border text-success" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-border text-danger" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-border text-warning" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-border text-info" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-border text-light" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <div class="spinner-border text-dark" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

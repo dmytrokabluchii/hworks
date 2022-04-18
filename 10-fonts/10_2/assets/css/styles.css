@@ -1,0 +1,159 @@
+@font-face{
+    font-family: "Proxima-Nova-Regular";
+    src: url('../fonts/Proxima\ Nova\ Regular.otf');
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+@font-face{
+    font-family: "Proxima-Nova-Light-Italic";
+    src: url('../fonts/Proxima\ Nova\ Light\ Italic.otf');
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+@font-face{
+    font-family: "Proxima-Nova-Thin";
+    src: url('../fonts/Proxima\ Nova\ Thin.otf');
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+@font-face{
+    font-family: "Proxima-Nova-Condensed-Extrabold";
+    src: url('../fonts/Proxima\ Nova\ Condensed\ Extrabold.otf');
+    font-style: normal; 
+    font-weight: bold; 
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Proxima-Nova-Regular', Georgia, 'Times New Roman', Times, serif;
+    background: #464f54;
+}
+
+.hi_header {
+    min-width: 64.5%;
+    position: absolute;
+    right: 0px;
+    top: 45px;
+}
+
+.header_name {
+    height: 187px;
+    width: 100%;
+    background-color: #181818;
+    padding: 52px 0 14px 64px;
+}
+
+.title_part {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #303030;
+}
+
+.title_part label {
+    color: #777777;
+    letter-spacing: 5px;
+}
+
+.title_part input {
+    outline: none;
+    border: none;
+}
+
+.title_part input {
+    background-color: #181818;
+    color: #fefefe;
+    font: normal 300% Georgia;
+    line-height: 41px;
+}
+
+.fonts {
+    height: 76px;
+    background-color: #f8bd2c;
+    width: 95%;
+    margin-left: 5%;
+    font-size: 200%;
+}
+
+.fonts ul {
+    padding-left: 40px;
+}
+
+
+.fonts ul li {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 0 8px;
+}
+
+.fonts ul li a {
+    color: #fadd95;
+    text-decoration: none;
+}
+
+.material-icons {
+    font-size: 110%;
+}
+
+.fonts ul li a:hover {
+    color: #fff;
+}
+
+
+.wrapper {
+    padding-top: 150px;   
+}
+
+.container{
+    width: 90%;
+    max-width: 1060px;
+    margin: 0px auto;
+    background-color: #fff;  
+}
+
+.content {
+    border-left: 2px solid #e8eced;
+    margin-left: 67px; 
+    min-height: 900px; 
+}
+
+.main_content {
+    padding: 200px 130px 0 55px;
+}
+
+.text_author {
+    padding: 0px 0 25px;
+    color: #b5b5b5;
+    font: 600 125% 'Proxima-Nova-Thin';
+    text-transform: uppercase;
+    letter-spacing: 4.5px;
+}
+
+h1 {
+    font: normal 470% 'Proxima-Nova-Condensed-Extrabold';  /*так и не смог четко подобрать шрифт*/
+    color: #2a2a2a;
+    text-transform: uppercase;
+    letter-spacing: 9px;  
+}
+
+.phrase {
+    color: #8f8f8f;
+    padding-bottom: 46px;
+    font: normal 170% 'Proxima-Nova-Light-Italic';
+    letter-spacing: 2px; 
+}
+
+.content_text p {
+    font: normal 150% Georgia;
+    line-height: 41px;
+    letter-spacing: 1px; 
+    padding-bottom: 20px;
+}

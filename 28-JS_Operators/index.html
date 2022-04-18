@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop</title>
+    <link rel="stylesheet" href="assets/css/_variables.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body>
+    <div class="row md-4" style="margin: 30px;">
+
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                <div class="card-header">Виконай додавання 0,1 і 0,2 добийся математично правильної відповіді.
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">0,1 + 0,2 =</h5>
+                    <p class="card-text">Push the button below!</p>
+                    <button type="button" class="btn btn-dark" onclick="addOne()">push</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                <div class="card-header">Виконай додавання рядка "1" і цифри 2 (обидві операнди повинні бути в змінних),
+                    добийся математично правильної відповіді.
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title"> "1" + 2 =</h5>
+                    <p class="card-text">Push the button below!</p>
+                    <button type="button" class="btn btn-dark" onclick="addTwo()">push</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                <div class="card-header">Користувач вказує обсяг флешки в Гб. Програма повинна порахувати скільки файлів
+                    розміром в 820 Мб поміщається на флешку.
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Amount of user flesh in GB</h5>
+                    <p class="card-text">Push the button below!</p>
+                    <button type="button" class="btn btn-dark" onclick="amountFlesh()">amount</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                <div class="card-header">Користувач вводить суму грошей в гаманці і ціну однієї шоколадки.
+                    Програма виводить скільки шоколадок може купити користувач і скільки здачі у нього залишиться.
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">How many chocolate and change in your wallet</h5>
+                    <p class="card-text">Push the button below!</p>
+                    <button type="button" class="btn btn-dark" onclick="amountMoneyAndPriceChocolate()">push</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                <div class="card-header">Запитай у користувача тризначне число і виведи його задом наперед.
+                    Для вирішення завдання тобі знадобиться оператор% (залишок від ділення).
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Three number backwards</h5>
+                    <p class="card-text">Push the button below!</p>
+                    <button type="button" class="btn btn-dark" onclick="backwardsNumber()">number</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                <div class="card-header">Користувач вводить суму вкладу в банк на 2 місяці, з процентною ставкою
+                    депозиту 5% річних. Вивести суму нарахованих відсотків.
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Three number backwards</h5>
+                    <p class="card-text">Push the button below!</p>
+                    <button type="button" class="btn btn-dark" onclick="depositInBank()">push</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                <div class="card-header">Що повернуть вираження:
+                    <ol>
+                        <li><br>2 && 0 && 3</li>
+                        <li><br> 2 || 0 || 3</li>
+                        <li><br> 2 && 0 || 3</li>
+                    </ol>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Answer</h5>
+                    <ol>
+                        <li>ответ: 0, т.к. 2 и 3 это true, а 0 это false(а возвращается в данном случае
+                            значение именно с false)</li>
+                        <li>ответ: 2, т.к. 2 это true, операнд останав-ся и возвращает исходное значение
+                            этого операнда, 0 это false (а возвращается в данном случае 1-е значение именно с true)</li>
+                        <li>ответ: 3, т.к. в (2 && 0) вернется 0(т.к. это false),
+                            а 0 или 3 - правильный ответ 3(возвращается в данном случае значение именно с true)</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header">Запросите у пользователя пятизначное число и переместите последнюю цифру в
+                    начало (из числа 12345 должно получиться число 51234).
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Enter the number consist of five digits!</h5>
+                    <p class="card-text">Push the button below!</p>
+                    <button type="button" class="btn btn-warning" onclick="lastNumberToStart()">number</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header">Зарплата работника составляет $250 + 10% от продаж. Запросите общую
+                    сумму продаж за месяц и посчитайте зарплату.
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Enter number</h5>
+                    <p class="card-text">Push the button below!</p>
+                    <button type="button" class="btn btn-warning" onclick="wagesInACompany()">wages</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

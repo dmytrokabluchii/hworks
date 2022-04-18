@@ -1,0 +1,146 @@
+@font-face{
+    font-family: "webfont-regular";
+    src: url('../font/weathericons-regular-webfont.woff');
+    src: url('../font/weathericons-regular-webfont.woff2');
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'webfont-regular', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #2b81ac;
+    color: #fff;
+}
+
+.content {
+    margin: 20px;
+    background-color: #3399CC;
+}
+
+.container {
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.main_name {
+    padding: 66px 0 40px;
+    font-family: 'Lucida Sans Unicode';
+    font-size: 21px;
+    line-height: 32px;
+}
+
+.weather_content ul {
+    font-size: 0;
+}
+
+.list_item {
+    list-style: none;
+    padding: 2px;
+    background: #fff;
+    width: 1166px;
+    cursor: pointer;
+}
+
+.list_item li {
+    display: inline-block;
+    width: calc(25% - 4px);
+    height: 147px;
+    margin: 2px;
+    transition: all .4s ease-in-out;
+}
+
+/* Зміна кольору при наведенні */
+.list_item:hover .list-style:not(:hover) {
+    opacity:0.6;
+}
+/* чи альтернативний варіант */
+/* ul:hover li {
+    opacity:0.6;
+}
+ul:hover li:hover {
+    opacity:1;
+} */
+
+.list_item li.btn-blue, .list_item li.btn-pink {
+    width: calc(50% - 4px);
+}
+
+.list_item li.btn-purple {
+    width: calc(100% - 4px);
+}
+
+.btn-list {
+    text-align: center;
+    padding-top: 26px;
+}
+
+.city_name, .temp {
+    font-size: 22px;
+    line-height: 34px;
+}
+
+.wi {
+    font-family: 'webfont-regular';
+    font-size: 42px;
+    line-height: 61px;
+}
+
+.btn-blue {
+    background: #3399CC;
+}
+
+.btn-turquoise {
+    background: #33CCCC;
+}
+
+.btn-violet {
+    background: #996699;
+}
+
+.btn-red {
+    background: #C24747;
+}
+
+.btn-orange {
+    background: #E2674A;
+}
+
+.btn-yellow {
+    background: #FFCC66;
+}
+
+.bbtn-light_green {
+    background: #99CC99;
+}
+
+.btn-grey {
+    background: #669999;
+}
+
+.btn-pink {
+    background: #CC6699;
+}
+
+.btn-green {
+    background: #339966;
+}
+
+.btn-purple {
+    background: #666699;
+}
+
+.final_text {
+    padding: 37px 0 60px;
+    font-family: 'Lucida Sans Unicode';
+    font-size: 16px;
+    line-height: 25px;
+}

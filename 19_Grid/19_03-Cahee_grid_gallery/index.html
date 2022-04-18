@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cahee</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="assets/css/responsive.min.css">
+</head>
+
+<body class="body">
+    <main class="main">
+        <section class="gallery">
+            <div class="gallery__container container">
+                <div class="gallery__text">
+                    <h2 class="gallery__title title-black">Gallery</h2>
+                    <div class="gallery__subtext subtext">
+                        <p>
+                            Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                            aliquip
+                            ex ea commodo consequat.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="gallery__grid">
+                    <div class="picture-big image-big gal-pic">
+                        <img class="lazy" data-src="assets/images/gallery1.jpg" alt="pic1">
+                    </div>
+
+                    <div class="picture-small gal-pic">
+                        <img class="w33 lazy" data-src="assets/images/gallery2.jpg" alt="pic2">
+                    </div>
+                    <div class="picture-small gal-pic">
+                        <img class="w33 lazy" data-src="assets/images/gallery3.jpg" alt="pic3">
+                    </div>
+
+                    <div class="image-middle gal-pic">
+                        <img class="w50 lazy" data-src="assets/images/gallery4.jpg" alt="pic4">
+                    </div>
+                    <div class="image-middle gal-pic">
+                        <img class="w50 lazy" data-src="assets/images/gallery5.jpg" alt="pic5">
+                    </div>
+                </div>
+
+                <div class="gallery__button">
+                    <button class="btn btn-blue" type="button">VIEW MORE
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous">
+    </script>
+    <script>
+        $(function () {
+            $(".hamburger, .page_overlay").on('click', function () {
+                $(".hamburger").toggleClass("is-active");
+                $("body").toggleClass("open");
+            });
+        });
+    </script>
+    <script src="assets/js/lazyload.js"></script>
+
+
+</body>
+
+</html>

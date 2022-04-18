@@ -1,0 +1,310 @@
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+@font-face {
+    font-family: "Poppins";
+    src: url(../fonts/Poppins-Regular.woff);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(../fonts/Poppins-SemiBold.woff);
+    font-style: normal;
+    font-weight: 600;
+}
+
+$base_size:16;
+
+@mixin fz($px_size) {
+    font-size: ($px_size/$base_size)+rem;
+}
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: rgb(255, 255, 255);
+
+    &::before {
+        content: '';
+        width: 0;
+        height: 160vh;
+        position: absolute;
+        top: 0;
+        left: 20%;
+        border-left: 1px solid rgba(153, 153, 153, .2);
+        z-index: 50;
+    }
+
+    &::after {
+        content: '';
+        width: 0;
+        height: 160vh;
+        position: absolute;
+        top: 0;
+        left: 40%;
+        border-left: 1px solid rgba(153, 153, 153, .2);
+        z-index: 50;
+    }
+}
+
+img {
+    vertical-align: top;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 86%;
+    max-width: 1880px;
+    margin: 0 auto;
+}
+
+.main {
+    &::before {
+        content: '';
+        width: 0;
+        height: 160vh;
+        position: absolute;
+        top: 0;
+        right: 20%;
+        border-left: 1px solid rgba(153, 153, 153, .2);
+        z-index: 50;
+    }
+
+    &::after {
+        content: '';
+        width: 0;
+        height: 160vh;
+        position: absolute;
+        top: 0;
+        right: 40%;
+        border-left: 1px solid rgba(153, 153, 153, .2);
+        z-index: 50;
+    }
+}
+
+.magazine {
+    padding: 55px 0 130px;
+    position: relative;
+
+    .empty__block_first {
+
+        &::before {
+            content: '✖';
+            position: absolute;
+            top: 1.2%;
+            right: 25%;
+            color: #e98457;
+            font-size: 30px;
+            transform: rotate(45deg);
+        }
+    }
+
+    &__title {
+
+        // Верстка треугольника(как сделать блую середину хз)
+        &::before {
+            // content: '◄';
+            // font-size: 45px;
+            // color: #e98457;
+            position: absolute;
+            content: '';
+            top: 17%;
+            left: 15%;
+            width: 0px;
+            height: 0px;
+            border-top: 23px solid transparent;
+            border-right: 45px solid #e98457;
+            border-bottom: 23px solid transparent;
+            transform: rotate(50deg);
+        }
+
+        width: 62%;
+        margin: 0 auto;
+        text-align: center;
+        font-family: 'Poppins';
+        text-transform: uppercase;
+        padding-bottom: 50px;
+
+        &_text p {
+            @include fz(18);
+            font-weight: bold;
+            letter-spacing: 0.22em;
+            padding-bottom: -15px;
+        }
+
+        &_main h4 {
+            @include fz(85);
+            font-weight: 600;
+            line-height: 1.07;
+        }
+    }
+
+    &__gallery {
+        width: 100%;
+        z-index: 110;
+        position: relative;
+
+        .slick-prev:before {
+            display: block;
+            content: ' ';
+            background-image: url('../img/svg/arrow-left.svg');
+            background-size: 100px 100px;
+            height: 100px;
+            width: 100px;
+        }
+
+        .slick-next:before {
+            display: block;
+            content: ' ';
+            background-image: url('../img/svg/arrow-right.svg');
+            background-size: 100px 100px;
+            height: 100px;
+            width: 100px;
+        }
+
+        .slick-prev {
+            left: -90px;
+            top: 40%;
+        }
+
+        .slick-next {
+            top: 40%;
+            right: -10px;
+        }
+
+        ul {
+            margin: 0 -22px;
+            width: 100%;
+
+            li {
+                width: 100%;
+                height: 100%;
+                padding: 22px;
+                position: relative;
+            }
+        }
+
+        &-block {
+            display: block;
+            position: relative;
+            line-height: 0;
+
+            &:after {
+                content: "";
+                opacity: 0;
+                transition: all 0.3s ease-out;
+            }
+
+            &:hover:after {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: transparent #32eaad;
+                opacity: 0.8;
+                z-index: 10;
+            }
+
+            &_text {
+                opacity: 0;
+                position: absolute;
+                color: rgb(255, 255, 255);
+                // padding: 0 30px 35px;
+                bottom: 35px;
+                left: 30px;
+                text-transform: uppercase;
+                transition: all 0.3s ease-out;
+                z-index: 20;
+            }
+
+            &:hover &_text {
+                opacity: 1;
+            }
+
+            &_title {
+                padding-bottom: 40px;
+
+                p {
+                    @include fz(40);
+                    letter-spacing: 0.06em;
+                }
+            }
+
+            &_title p:first-child {
+                padding-bottom: 55px;
+            }
+        }
+    }
+}
+
+.prev {
+    display: block;
+    position: absolute;
+    left: -110px;
+    bottom: 40%;
+    font-size: 0;
+    line-height: 0;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+    z-index: 10;
+    height: 100px;
+    width: 100px;
+
+    &:before {
+        display: block;
+        content: ' ';
+        background-image: url('../img/svg/arrow-left.svg');
+        background-size: 100px 100px;
+        height: 100px;
+        width: 100px;
+    }
+}
+
+.next {
+    display: block;
+    position: absolute;
+    right: -70px;
+    bottom: 40%;
+    font-size: 0;
+    line-height: 0;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+    z-index: 10;
+    height: 100px;
+    width: 100px;
+
+    &:before {
+        display: block;
+        content: ' ';
+        background-image: url('../img/svg/arrow-right.svg');
+        background-size: 100px 100px;
+        height: 100px;
+        width: 100px;
+    }
+}

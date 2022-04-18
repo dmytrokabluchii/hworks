@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop</title>
+    <link rel="stylesheet" href="assets/css/_variables.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body>
+    <div class="row md-4" style="margin: 50px;">
+
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                <div class="card-header">1) Запитай у користувача його вік і визначи, ким він є: дитиною (0-2),
+                    підлітком
+                    (12-18), дорослим (18_60) або пенсіонером (60 ...),
+                    передбач можливість введення невірних даних.</div>
+                <div class="card-body">
+                    <h5 class="card-title">How Old You?</h5>
+                    <p class="card-text">Push the button below!</p>
+                    <button type="button" class="btn btn-dark" onclick="userAge()">age</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                <div class="card-header">2) Запитай у користувача число від 0 до 9 і виведи йому спецсимвол, який
+                    розташований на цій клавіші (1 !, 2 @, 3 # і т. д).</div>
+                <div class="card-body">
+                    <h5 class="card-title">Enter the number from 0 to 9</h5>
+                    <p class="card-text">Push the button below!</p>
+                    <button type="button" class="btn btn-dark" onclick="showSymbol()">push</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                <div class="card-header">3) Підрахуй суму всіх чисел в заданому користувачем діапазоні.
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Enter the range</h5>
+                    <p class="card-text">Push the button below!</p>
+                    <button type="button" class="btn btn-dark" onclick="findSum()">push</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                <div class="card-header">4) Запитай у користувача 2 числа і знайди найбільший спільний дільник.
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">To find the greatest common divider</h5>
+                    <p class="card-text">Push the button below!</p>
+                    <button type="button" class="btn btn-dark" onclick="findCommonDivider()">push</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                <div class="card-header">5) Запитай у користувача число і виведи всі дільники цього числа.
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">All divider of number</h5>
+                    <p class="card-text">Push the button below!</p>
+                    <button type="button" class="btn btn-dark" onclick="getDivider()">push</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                <div class="card-header">6) Запитай у користувача п’ятирозрядне число і визначи, чи є воно паліндромом.
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Enter 5 digits</h5>
+                    <p class="card-text">Push the button below!</p>
+                    <button type="button" class="btn btn-dark" onclick="isPalindrome()">push</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                <div class="card-header">7) Запитай у користувача суму покупки і виведи суму до оплати зі знижкою:
+                    від 200 до 300 - знижка буде 3%; від 300 до 500 - 5%; від 500 і вище - 7%.
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Enter the amount of purchase</h5>
+                    <p class="card-text">Push the button below!</p>
+                    <button type="button" class="btn btn-dark" onclick="getAmountWithDiscount()">push</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                <div class="card-header">8) Запитай у користувача 10 чисел і порахуй, скільки він ввів додатніх,
+                    від’ємних і нулів.
+                    При цьому також порахуй, скільки з них парних і непарних. Виведи статистику на екран.
+                    Враховуй, що достатньо однієї змінної (не 10) для введення чисел користувачем.
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Enter the number</h5>
+                    <p class="card-text">Push the button below!</p>
+                    <button type="button" class="btn btn-dark" onclick="getStatistic()">push</button>
+                    <p class="card-text" id="resultsNumberStatistic">Result: </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                <div class="card-header">9) Зацикли висновок днів тижня таким чином: «День тижня. Хочеш побачити
+                    наступний день? » і так до тих пір, поки користувач натискає OK.
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Enter the number of day</h5>
+                    <p class="card-text">Push the button below!</p>
+                    <button type="button" class="btn btn-dark" onclick="getNextDay()">push</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header">10. Гра «Вгадай число». Запропонуй користувачеві загадати число від 0 до 100 і
+                    відгадай його наступним способом:
+                    кожну ітерацію циклу діли діапазон чисел навпіл, записуй результат в N і питай у користувача «Ваше
+                    число N, N або==N?». Залежно від того що вказав користувач, зменшуй діапазон. Початковий діапазон
+                    від 0 до 100, поділи навпіл і отримай 50. Якщо користувач вказав, що його число 50, то зміни
+                    діапазон на від 51 до 100. І так до тих пір, поки користувач не вибере == N.
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Game: to guess the number!</h5>
+                    <!-- <form action="#" id="promptUser">
+                        Enter the number: <input type="text" id="userNumber">
+                    </form> -->
+                    <p class="card-text">Push the button below!</p>
+                    <button type="button" class="btn btn-warning" onclick="guessTheNumber()">guess number</button>
+                    <!-- <ul id="outputNumber"></ul> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header">11. Виведи таблицю множення для всіх чисел від 2 до 9. Кожне число необхідно
+                    помножити на числа від 1 до 10.
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Calculator</h5>
+                    <p class="card-text">Push the button below!</p>
+                    <button type="button" class="btn btn-warning" onclick="calculator()">push</button>
+                    <p class="card-text" id="resultsCalculator">Result: </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header">12) Запитай дату (день, місяць, рік) і виведи наступну за нею дату.
+                    Враховуй можливість переходу на наступний місяць, рік, а також високосний рік.
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Enter date</h5>
+                    <p class="card-text">Push the button below!</p>
+                    <button type="button" class="btn btn-warning" onclick="nextDate()">date</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                <div class="card-header">13. Задача на чет и нечет.
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Enter number from 0 to 9</h5>
+                    <p class="card-text">Push the button below!</p>
+                    <button type="button" class="btn btn-dark" onclick="foundEvenOrNotEven()">num</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                <div class="card-header">14. Запросить у пользователя трехзначное число и проверить, есть ли в нем
+                    одинаковые цифры
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Enter the number from 0 to 999</h5>
+                    <p class="card-text">Push the button below!</p>
+                    <button type="button" class="btn btn-dark" onclick="setThreeNumber()">num</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                <div class="card-header">15. Запросить у пользователя год и проверить, високосный он или нет. Високосный
+                    год либо кратен 400, либо кратен 4 и при этом не кратен 100
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Enter year</h5>
+                    <p class="card-text">Push the button below!</p>
+                    <button type="button" class="btn btn-dark" onclick="setYear()">year</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

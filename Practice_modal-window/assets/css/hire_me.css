@@ -1,0 +1,202 @@
+.hire .btn-white, .hire .btn-blue {
+  display: inline-block;
+  height: 55px;
+  width: 204px;
+  line-height: 46px;
+  padding: 0 15px;
+  border-radius: 30px;
+  font-family: "serif";
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  font-family: "Lato";
+}
+
+.hire .btn-blue {
+  color: #fff;
+  background-color: #3695ff;
+  border: 1px solid #3695ff;
+}
+.hire .btn-blue:hover {
+  background: #10254b;
+  border-color: #10254b;
+}
+
+.hire_overlay {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(128, 129, 131, 0.7);
+  z-index: -1;
+  backdrop-filter: blur(5px);
+}
+
+.hire__main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-left: 30%;
+  z-index: 99;
+  opacity: 0;
+  padding: 50px 145px 60px;
+  background: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+@media screen and (max-width: 1600px) {
+  .hire__main {
+    margin-left: 25%;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .hire__main {
+    margin-left: 20%;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .hire__main {
+    margin-left: 15%;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .hire__main {
+    margin-left: 10%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .hire__main {
+    padding: 40px 90px 50px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .hire__main {
+    margin-left: 5%;
+    padding: 30px 60px 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hire__main {
+    padding: 30px 30px 30px;
+  }
+}
+@media screen and (max-width: 365px), (max-height: 700px) {
+  .hire__main {
+    margin-left: 3%;
+    padding: 30px 10px 25px;
+  }
+}
+.hire .overlay-form .close-btn {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  color: #3677fd;
+  font-size: 50px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.hire__title {
+  text-align: center;
+  font-size: 2.8125rem;
+  font-weight: 400;
+  color: #3677fd;
+  padding-bottom: 50px;
+}
+@media screen and (max-width: 365px), (max-height: 700px) {
+  .hire__title {
+    padding-bottom: 20px;
+  }
+}
+.hire__textarea {
+  padding-bottom: 30px;
+}
+@media screen and (max-width: 365px), (max-height: 700px) {
+  .hire__textarea {
+    padding-bottom: 15px;
+  }
+}
+.hire__field {
+  width: 100%;
+  outline: none;
+  border: none;
+  border: 1px solid #b7c0c9;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  color: #acacac;
+  font-size: 1.0625rem;
+}
+.hire__name, .hire__mail {
+  height: 45px;
+}
+.hire__message {
+  max-height: 180px;
+  resize: none;
+  padding: 15px 0 0 10px;
+}
+@media screen and (max-width: 365px), (max-height: 700px) {
+  .hire__message {
+    max-height: 140px;
+  }
+}
+.hire__field::placeholder {
+  padding-left: 15px;
+  color: #acacac;
+}
+.hire__button {
+  text-align: center;
+}
+.hire .btn-blue {
+  font-weight: 400;
+}
+.hire .virtual__button {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hire .btn-white {
+  color: #3695ff;
+  background-color: #fff;
+  border: 1px solid #fff;
+  font-weight: 700;
+}
+.hire .btn-white:hover {
+  background: #10254b;
+  border-color: #10254b;
+}
+
+body.activeForm .overlay-form {
+  z-index: 2;
+  opacity: 1;
+  top: 10vh;
+  max-width: 810px;
+  transition: top 500ms ease-in-out, opacity 500ms ease-in-out, height 0ms ease-in-out 0ms;
+}
+@media screen and (max-width: 1000px) {
+  body.activeForm .overlay-form {
+    max-width: 700px;
+  }
+}
+@media screen and (max-width: 850px) {
+  body.activeForm .overlay-form {
+    max-width: 550px;
+  }
+}
+@media screen and (max-width: 600px) {
+  body.activeForm .overlay-form {
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 450px) {
+  body.activeForm .overlay-form {
+    top: 5vh;
+    max-width: 330px;
+  }
+}
+@media screen and (max-width: 365px), (max-height: 700px) {
+  body.activeForm .overlay-form {
+    max-width: 300px;
+  }
+}

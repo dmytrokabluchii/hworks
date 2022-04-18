@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics</title>
+    <link rel="stylesheet" href="assets/css/_variables.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body>
+    <div class="row md-4" style="padding-left: 30px;">
+
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header">Створи HTML-файл, в ньому пропиши всі можливі способи використання JS</div>
+                <div class="card-body">
+                    <h5 class="card-title">Всі можливі способи використання JS, топ 10</h5>
+                    <ol>
+                        <li>Розробка веб-сайтів</li>
+                        <li>Веб-програми</li>
+                        <li>Серверні програми</li>
+                        <li>Можливість створення презентацій як веб-сайту</li>
+                        <li>Веб-сервери</li>
+                        <li>Ігри</li>
+                        <li>Smartwatch додатки</li>
+                        <li>Мобільні додатки</li>
+                        <li>Програмування роботів</li>
+                        <li>Малювання графіки на веб-сторінці</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header"> Вкажи всі можливі способи коментування коду;</div>
+                <div class="card-body">
+                    <h5 class="card-title">User Name</h5>
+                    <p class="card-text">Однострочные комментарии начинаются с двойной косой черты</p>
+                    <p class="card-text">Многострочные комментарии начинаются косой чертой со звёздочкой /* и
+                        заканчиваются звёздочкой с косой чертой</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header"> Які стилі написання імен змінних ти знаєш?</div>
+                <div class="card-body">
+                    <h5 class="card-title">Варіанти</h5>
+                    <ul>
+                        <li>CamelCase – стиль написання складних слів, при якому кілька слів пишуться разом
+                            без пробілів, при цьому кожне слово всередині фрази пишеться з великих літер.
+                            Приклад:вместеВотТак</li>
+                        <li>Жодного трансліту. Лише англійський.</li>
+                        <li>Використовувати короткі імена лише для змінних «місцевого значення».</li>
+                        <li>І останнє, головне. Ім'я змінної має максимально чітко відповідати збереженим у ній даним
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                <div class="card-header">Запитай ім’я користувача та виведи у відповідь “Привіт, *ім’я*”;</div>
+                <div class="card-body">
+                    <h5 class="card-title">User Name</h5>
+                    <p class="card-text">Push the button below!</p>
+                    <button type="button" class="btn btn-dark" onclick="userName()">name</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                <div class="card-header">Запитай рік народження користувача, порахуй його/її вік і виведи результат.
+                    Поточний рік вкажи в коді як константу;</div>
+                <div class="card-body">
+                    <h5 class="card-title">User Year Of Birth</h5>
+                    <p class="card-text">Push the button below!</p>
+                    <button type="button" class="btn btn-dark" onclick="userAgeYear()">year</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                <div class="card-header">Запитай у користувача довжину сторони квадрату і виведи периметр цього квадрат
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Length side of Square</h5>
+                    <p class="card-text">Push the button below!</p>
+                    <button type="button" class="btn btn-dark" onclick="lengthSideSquare()">length</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                <div class="card-header">Запитай у користувача радіус кола і виведи площу такої окружності.
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title"> Area of Circle</h5>
+                    <p class="card-text">Push the button below!</p>
+                    <button type="button" class="btn btn-dark" onclick="areaCircle()">radius</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                <div class="card-header">Запитай у користувача відстань в кілометрах між двома містами і за скільки
+                    годин він хоче дістатися.
+                    Порахуй швидкість, з якою необхідно рухатися, щоб встигнути вчасно.
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Need speed for it</h5>
+                    <p class="card-text">Push the button below!</p>
+                    <button type="button" class="btn btn-dark" onclick="userSpeed()">speed</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                <div class="card-header">Реалізуй конвертор валют. Користувач вводить долари, програма переводить їх в
+                    євро. Курс валют зберігається в константі.
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">In the result amount in Euro</h5>
+                    <p class="card-text">Push the button below!</p>
+                    <button type="button" class="btn btn-dark" onclick="exchangeRate()">exchange</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

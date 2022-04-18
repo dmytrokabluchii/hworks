@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 90%;
+    max-width: 1149px;
+    margin: 0 auto;
+}
+
+.clr {
+    clear: both;
+}
+
+.icon {
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    background-color: #1275b9;
+    background-image: url('../images/sprite.png');
+    background-repeat: no-repeat;
+    border: 1px solid #1275b9;
+    display: inline-block;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+}
+
+.icon:hover {
+    background-color: #fff;
+}
+
+.icon_tablet {
+    background-position: 19px 16px;
+}
+
+.icon_tablet:hover {
+    background-position: 19px -56px;
+}
+
+.icon_cog {
+    background-position: -62px 16px;
+}
+
+.icon_cog:hover {
+    background-position: -62px -56px;
+}
+
+.icon_dash {
+    background-position: -141px 16px;
+}
+
+.icon_dash:hover {
+    background-position: -141px -56px;
+}
+
+.features {
+    background: #fff;
+    padding-top: 55px;
+}
+
+.feature_icons {
+    float: left;
+    width: 33.3333%;
+    text-align: center;
+    padding: 0 50px;
+}
+
+.features h2 {
+    font-size: 85%;
+    padding: 10px 0 15px;
+}
+
+.features p {
+    color: grey;
+}

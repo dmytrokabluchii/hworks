@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site02</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body class="body">
+    <main class="main">
+        <div class="form">
+            <div class="form__container">
+                <ul class="form__item links">
+                        <li><a href="#" class="form__link">Sign in</a>
+                        </li>
+                        <li><a href="#" class="form__link">Join us</a>
+                        </li>
+                </ul>
+
+                <div class="form__field">
+                    <form action="#" id="my_form">
+                        <div>
+                            <label class="form__name" for="name">Username</label>
+                        </div>
+                        <input class="form__input" type="text" minlength="3" name="registration_login" id="name">
+                        <div class="form__error">error</div>
+
+                        <div>
+                            <label class="form__name" for="password">Password</label>
+                        </div>
+                        <input class="form__input" type="password" name="registration_password" id="password">
+                        <div class="form__error">error</div>
+
+                        <div class="form__checkbox">
+                            <input class="form__checkbox_figure form__checkbox_inner"  type="checkbox" name="sign" id="signin" value="check">
+                            <label class="form__checkbox_name" for="signin">
+                                Keep me signed in
+                            </label>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="form__btn btn">
+                    <button class="form__button btn-blue" type="submit">Sign in
+                    </button>
+                </div>
+
+                <ul class="form__footer">
+                    <li><a href="#" class="form__finish">Forgot password</a></li>
+                    <li><a href="#" class="form__finish">Create an account</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

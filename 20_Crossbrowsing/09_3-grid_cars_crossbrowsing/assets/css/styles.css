@@ -1,0 +1,214 @@
+ /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 5 version
+*/
+
+@font-face{
+    font-family: "HansKendrick-Regular";
+    src: url('../fonts/HansKendrick-Regular.woff2');
+    font-style: normal; 
+    font-weight: normal; 
+    }
+    
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'HansKendrick-Regular', Arial, Helvetica, sans-serif;
+    background-color: #e2e7ec;
+}
+
+.container{
+    width: 90%;
+	max-width: 1120px;
+	margin: 0px auto;
+}
+
+.content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*grid-template-rows: 1fr 1fr;*/
+    gap: 20px;
+    padding : 92px 0;
+    font-size: 1rem;
+}
+
+img {
+    vertical-align: top;
+    width: 100%;
+}
+
+.hi__row_main{
+    position: relative;
+    -ms-grid-column: span 2;
+        grid-column-start: span 2;
+    /* display: inline-block;
+    width: calc(66.666% - 8px);  */   
+}
+
+.hi__image_first img {
+    width: 100%;
+    height: 540px; 
+    -o-object-fit: cover; 
+       object-fit: cover;
+}
+.hi__image_first::after {
+    content: "";
+	display: block;    
+	width: 100%;
+	height: 100%;    
+	position: absolute;
+	bottom: 0;      
+	left: 0;   
+	background: transparent;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(60%, #000000), to(#f5f5d1));
+    background-image: -o-linear-gradient(bottom, #000000 60%, #f5f5d1 100%);
+    background-image: linear-gradient(0deg, #000000 60%, #f5f5d1 100%);
+	opacity: 0.6;
+}
+
+.hi_row {
+    height: 540px; 
+    background-color: #fff;
+    /*width: calc(33.333% - 20px*2/3); */
+    position: relative;
+}
+
+.main_text {
+    position: absolute;
+    width: 100%;
+    bottom: 33px;
+    left: 45px;
+    padding-right: 40%;
+    font-weight: bold;
+    font-family: 'HansKendrick-Regular';
+}
+
+.hi_main_title h3 {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding-top: 12px;
+}
+
+.row_text {
+    padding: 0 26px 0 28px;
+}
+
+.date {
+    color: #818181;
+    font-size: 0.9rem;
+}
+
+.icon {
+    position: absolute;
+    left: 28px;
+    bottom: 25px;
+}
+
+.hi__image {
+    padding-bottom: 25px;
+}
+
+.hi_title h3 {
+    padding-top: 13px;
+    font: 600 1.3rem 'HansKendrick-Regular';
+    /*на макете шрифт жирнее такого нет у меня*/
+}
+
+.footer__row {
+    display: -ms-grid;
+    display: grid;
+	height: 30px;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+    justify-items: center;
+    padding-bottom: 100px;
+}
+
+.footer__text {
+    color: #99a5b0;
+    font-size: 0.8rem;
+}
+
+i {
+    font-size: 30px;
+    color: #99a5b0;
+    background: -webkit-linear-gradient(#99a5b0, darkgrey);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Пробный вариант формулы на работу от фрилансера */
+@media screen and (max-width:1120px) {
+    .content {
+        padding: calc(10px + (50 - 10) * ((100vw - 320px) / (1120 - 320)));
+    }
+}
+
+@media screen and (max-width:650px) {
+    .content {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }    
+    .main_text {
+        position: absolute;
+        bottom: 50px;
+        padding-right: 15%;
+    } 
+    .date {
+        color: #c9c6c6;
+        font-size: 1rem;
+    } 
+    .hi_title h3 {
+        font-size: 1.2rem;
+    }
+    .footer__row {
+        padding-bottom: 60px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .container{
+        width: 100%;
+    }
+       
+    .hi__image_first img {
+        width: 100%;
+        height: 460px;
+    }
+    .hi_row img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .main_text {
+        left: 20px;
+        bottom: 20px;
+        padding-right: 30px;
+    }
+    .hi_main_title h3 {
+        font-size: 1.5rem;
+    }
+    .row_text {
+        padding: 0 15px 0 15px;
+    }
+    .hi_row {
+        -ms-grid-column: span 2;
+            grid-column-start: span 2;
+    }   
+}

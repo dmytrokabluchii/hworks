@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+    <link rel="stylesheet" href="assets/css/_variables.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body class="my-container">
+    <div class="row md-4">
+        <!-- <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                <div class="card-header">4. Напиши функцію, яка обчислює факторіал переданого їй числа.</div>
+                <div class="card-body">
+                    <h5 class="card-title">Factorial</h5>
+                    <p class="card-text">Push the button below!</p>
+                    <button type="button" class="btn btn-dark" onclick="factorialSecond()">push</button>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3">
+            <div class="card text-white bg-dark mb-3">
+                <div class="card-header">7. Напиши функцію, яка перевіряє, чи є передане їй число “досконалим
+                    числом”.</div>
+                <div class="card-body">
+                    <h5 class="card-title">Perfect number</h5>
+                    <div class="col-5">
+                        <label for="perfect_number">Enter number before 10000:</label>
+                        <input type="number" class="form-control" placeholder="Number" min="0" value=""
+                            id="perfect_number">
+                    </div>
+                    <br>
+                    <button type="button" class="btn btn-warning" onclick="checkPerfectNumber()">push</button>
+                    <!-- <p class="card-text" id="resultsPerfectNumber" style="font-size: 18px;">Result: </p> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3">
+            <div class="card text-white bg-dark mb-3">
+                <div class="card-header">8. Напиши функцію, яка приймає мінімальне і максимальне значення для
+                    діапазону,і виводить тільки досконалі числа з діапазону. Використовуй написану раніше функцію.
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Perfect number in range</h5>
+                    <div class="col-5">
+                        <label for="perfect_number_in_range_min">Enter min number of range from 1 to 10000:</label>
+                        <input type="number" class="form-control" placeholder="Number" min="0" value=""
+                            id="perfect_number_in_range_min">
+                    </div>
+                    <div class="col-5">
+                        <label for="perfect_number_in_range_max">Enter max number of range from 1 to 10000:</label>
+                        <input type="number" class="form-control" placeholder="Number" min="0" value=""
+                            id="perfect_number_in_range_max">
+                    </div>
+                    <br>
+                    <button type="button" class="btn btn-warning" onclick="findAmountOfPerfectNumbers()">push</button>
+                    <!-- <p class="card-text" id="resultsPerfectNumberInRange" style="font-size: 18px;">Result: </p> -->
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card mb-3">
+            <h5 class="mt-0">1. Напиши всі можливі варіанти створення функцій.
+            </h5>
+            <div class="card-body">
+                <h4 class="card-title">Variant of Function</h4>
+                <h6 class="card-title"><b>1. Function Declaration (Объявление Функции)</b></h6>
+                <p class="card-text">Пример: <br>
+                    function sayHi() { <br>
+                    alert( "Привет" ); <br>
+                    } <br>
+                </p>
+                <h6 class="card-title"><b>2. Function Expression (Функциональное Выражение)</b></h6>
+                <p class="card-text">Пример: <br>
+                    let sayHi = function() { <br>
+                    alert( "Привет" ); <br>
+                    } <br>
+                </p>
+                <h6 class="card-title"><b>3. Функции-«колбэки» и анонимные функции</b></h6>
+                <p class="card-text">Пример: <br>
+                    function ask(question, yes, no) { <br>
+                    if (confirm(question)) yes() <br>
+                    else no(); <br>
+                    } <br>
+                    ask("Вы согласны?", <br>
+                    function() { alert("Вы согласились."); }, <br>
+                    function() { alert("Вы отменили выполнение."); } <br>
+                    ); <br>
+                </p>
+                <p><b>Функции-«callback»</b> - это функция переданная в качестве параметра другой функции!
+                    В примере функции объявляются прямо внутри вызова ask(...). У них нет имён, поэтому они называются
+                    <b>анонимными.</b> Такие функции недоступны снаружи ask (потому что они не присвоены переменным), но
+                    это
+                    как раз то, что
+                    нам нужно. <br>
+                </p>
+
+                <h6 class="card-title"><b>4. «Стрелочные функции» (arrow functions) =></b></h6>
+                <p>Стрелочные функции (arrow functions) позоляют сократить определение обычных функций. Стрелочные
+                    функции
+                    образуются с помощью знака стрелки =>,
+                    перед которым в скобках идут параметры функции, а после - собственно тело функции.
+                </p>
+                <p class="card-text">Пример: <br>
+                    let func = (arg1, arg2, ...argN) => expression;
+                </p>
+                <p class="card-text">Другими словами, это более короткий вариант такой записи: <br>
+                    let func = function(arg1, arg2, ...argN) { <br>
+                    return expression; <br>
+                    } <br>
+                </p>
+                <h6 class="card-title"><b>5. Рекурсия</b></h6>
+                <p>Функцию можно также вызвать внутри самой себя в программировании называется <b>рекурсией.</b>
+                    Кроме этого необходимо предусмотреть условия для выхода из рекурсии!.
+                    Это не отдельный вид создания функции, но решил упомянуть и его все же!
+                </p>
+                <p class="card-text">Пример функция рекурсивного вычисления факториала: <br>
+                    function factorial(n) { <br>
+                    if ((n === 0) || (n === 1)) <br>
+                    return 1; <br>
+                    else <br>
+                    return (n * factorial(n - 1)); <br>
+                    } <br>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

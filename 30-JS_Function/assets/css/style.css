@@ -1,0 +1,17 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+}
+
+.my-container {
+  width: 90%;
+  max-width: 1600px;
+  margin: 0 auto;
+}

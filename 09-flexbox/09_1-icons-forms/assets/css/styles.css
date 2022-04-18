@@ -1,0 +1,202 @@
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Asap' sans-serif;
+    color: #666;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.block_title {
+    text-align: center;
+    margin: 100px 0 58px;
+}
+
+
+.block_title h1 {
+    color: #202020;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 28px;
+}
+
+.block_title span {
+    font-weight: 700;
+    color: #2ec06c;
+}
+
+.page {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page_block-info {
+    flex-basis: 300px;
+}
+
+.page_block-item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.page_block-item li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 140px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    transition: all .2s ease;
+}
+
+.page_block-item li a svg {
+    transition: all .2s ease;
+}
+
+.page_block-item li a:hover svg {
+    fill: #fff;
+}
+
+.fb_icon {
+    border-color: #3b5998;
+}
+
+.fb_icon svg {
+    fill: #3b5998;
+}
+
+.fb_icon:hover {
+    fill: #3b5998;
+}
+
+.fb_icon:hover {
+    background-color: #3b5998;
+}
+
+.tw_icon {
+    border-color: #00aced;
+}
+
+.tw_icon svg {
+    fill: #00aced;
+}
+
+.tw_icon:hover {
+    background-color: #00aced;
+}
+
+.ing_icon {
+    border-color: #517fa4;
+}
+
+.ing_icon svg {
+    fill: #517fa4;
+}
+
+.ing_icon:hover  {
+    background-color: #517fa4;
+}
+
+.db_icon {
+    border-color: #ff0084;
+}
+
+.db_icon svg {
+    fill: #ff0084;
+}
+
+.db_icon:hover {
+    background-color: #ff0084;
+}
+
+.form_wrapp {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.page_block-form {
+    flex-basis: 620px;
+}
+
+.form_wrapp-element {
+    width: calc(50% - 10px);
+}
+
+input[type='text'], textarea {
+    width: 100%;
+    font-family: 'Asap', sans-serif;
+    height: 50px;
+    line-height: 50%;
+    padding: 0 20px;
+    border-radius: 5px;
+    border: 1px solid #bababa;
+    outline: none; 
+}
+
+input[type=text]:focus, textarea:focus {
+    border: 1px solid #2ec06c;
+}
+
+textarea {
+    height: 160px;
+    line-height: 30px;
+    padding: 20px;
+    vertical-align: top;
+}
+
+.form_element-position {
+    width: 100%;
+    position: relative;
+}
+
+.form_wrapp-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    background-color: #2ec06c;
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.form_wrapp-btn svg {
+    fill: #fff;
+}
+
+@media screen and (max-width: 600px) {
+    .page_block-form, 
+    .page_block-info {
+        flex-basis: 100%;
+    }
+    .page {
+        flex-direction: column;
+    }
+}
+

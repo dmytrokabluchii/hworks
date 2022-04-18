@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+    <link rel="stylesheet" href="assets/css/_variables.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body>
+    <div class="row md-4">
+
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                <h5 class="card-title" style="text-align: center;">Задача № 2</h5>
+                <div class="card-header">Створи функцію, яка буде виводити кількість переданих їй
+                    аргументів.</div>
+                <div class="card-body">
+                    <div class="col-8">
+                        <label for="arguments_number">Enter number:</label>
+                        <input type="text" class="form-control" placeholder="Enter Number" min="0" value=""
+                            id="arguments_number">
+                    </div>
+                    <br>
+                    <p class="card-text" style="margin-bottom: 0px;">Push the button below!</p>
+                    <div style="padding-bottom: 5px;">
+                        <button type="button" class="btn btn-dark" onclick="calcArg(
+                            argNum = document.getElementById('arguments_number').value
+                        )">push</button>
+                    </div>
+                    <p class="card-text calcA" id="calcArg" style="font-size: 18px;">Result:
+                        <span id="results_calcArg"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                <h5 class="card-title" style="text-align: center;">Задача № 3</h5>
+                <div class="card-header">Напиши функцію, яка приймає 2 числа і повертає: -1, якщо перше
+                    число менше, ніж друге; 1 - якщо перше число більше, ніж друге; 0 - якщо числа рівні.</div>
+                <div class="card-body">
+                    <div class="col-8">
+                        <label for="first_number">Enter first number:</label>
+                        <input type="number" class="form-control" placeholder="Number" min="0" value=""
+                            id="first_number">
+                    </div>
+                    <div class="col-8">
+                        <label for="second_number">Enter second number:</label>
+                        <input type="number" class="form-control" placeholder="Number" min="0" value=""
+                            id="second_number">
+                    </div>
+                    <br>
+                    <p class="card-text" style="margin-bottom: 0px;">Push the button below!</p>
+                    <div style="padding-bottom: 5px;">
+                        <button type="button" class="btn btn-dark" onclick="getTwoNumber(
+                            numOne = parseInt (document.getElementById('first_number').value), 
+                            numTwo = parseInt (document.getElementById('second_number').value))">
+                            push</button>
+                    </div>
+                    <p class="card-text results_getTwoNumber" style="font-size: 18px;">Result:
+                        <span id="results_getTwoNumber"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                <h5 class="card-title" style="text-align: center;">Задача № 4</h5>
+                <div class="card-header">Напиши функцію, яка обчислює факторіал переданого їй числа.</div>
+                <div class="card-body">
+                    <div class="col-8">
+                        <label for="factorial_number">Enter positive number from 1 till 20:</label>
+                        <input type="number" class="form-control" placeholder="Number" min="0" value=""
+                            id="factorial_number">
+                    </div>
+                    <br>
+                    <p class="card-text" style="margin-bottom: 0px;">Push the button below!</p>
+                    <div style="padding-bottom: 5px;">
+                        <button type="button" class="btn btn-dark"
+                            onclick="factorial(document.getElementById('factorial_number').value)">push</button>
+                    </div>
+                    <p class="card-text results_factorial" style="font-size: 18px;">Result:
+                        <span id="results_factorial"></span>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                <div class="card-header">5. Напиши функцію, яка приймає три окремі цифри і перетворює їх в одне число.
+                    Наприклад: цифри 1, 4, 9 перетворяться в число 149.</div>
+                <div class="card-body">
+                    <div class="col-8">
+                        <label for="get__first_number">Enter first number:</label>
+                        <input type="number" class="form-control" placeholder="Number" min="0" value=""
+                            id="get__first_number">
+                    </div>
+                    <div class="col-8">
+                        <label for="get__second_number">Enter second number:</label>
+                        <input type="number" class="form-control" placeholder="Number" min="0" value=""
+                            id="get__second_number">
+                    </div>
+                    <div class="col-8">
+                        <label for="get__third_number">Enter third number:</label>
+                        <input type="number" class="form-control" placeholder="Number" min="0" value=""
+                            id="get__third_number">
+                    </div>
+                    <br>
+                    <p class="card-text">Push the button below!</p>
+                    <div style="padding-bottom: 5px;">
+                        <button type="button" class="btn btn-dark" onclick="changeInOneNumber(
+                            one = parseInt (document.getElementById('get__first_number').value),
+                            two = parseInt (document.getElementById('get__second_number').value),
+                            three = parseInt (document.getElementById('get__third_number').value))">push</button>
+                    </div>
+                    <p class="card-text results_changeInOneNumber" style="font-size: 18px;">Result:
+                        <span id="results_changeInOneNumber"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                <div class="card-header">6. Напиши функцію, яка приймає довжину і ширину прямокутника і обчислює його
+                    площу.
+                    Якщо в функцію передали 1 параметр, то вона обчислює площу квадрата.</div>
+                <div class="card-body">
+                    <div class="col-8">
+                        <label for="length">Enter first number:</label>
+                        <input type="number" class="form-control" placeholder="Number" min="0" value="" id="length">
+                    </div>
+                    <div class="col-8">
+                        <label for="width">Enter second number:</label>
+                        <input type="number" class="form-control" placeholder="Number" min="0" value="" id="width">
+                    </div>
+                    <p class="card-text">Push the button below!</p>
+                    <div style="padding-bottom: 5px;">
+                        <button type="button" class="btn btn-dark" onclick="lengthSideRectangle(
+                            length = parseInt (document.getElementById('length').value), 
+                            width = parseInt (document.getElementById('width').value))">
+                            push</button>
+                    </div>
+                    <p class="card-text results_lengthSideRectangle" style="font-size: 18px;">Result:
+                        <span id="results_lengthSideRectangle"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header">7. Напиши функцію, яка перевіряє, чи є передане їй число “досконалим
+                    числом”. Досконале число - це число, яке дорівнює сумі всіх своїх дільників.</div>
+                <div class="card-body">
+                    <h5 class="card-title">Perfect number</h5>
+                    <div class="col-8">
+                        <label for="perfect_number">Enter number before 10000:</label>
+                        <input type="number" class="form-control" placeholder="Number" min="0" value=""
+                            id="perfect_number">
+                    </div>
+                    <br>
+                    <div style="padding-bottom: 5px;">
+                        <button type="button" class="btn btn-warning" onclick="checkPerfectNumber(
+                            num = parseInt (document.getElementById('perfect_number').value))">
+                            push</button>
+                    </div>
+                    <p class="card-text results_checkPerfectNumber" style="font-size: 18px; padding-bottom: 5px;">
+                        Result:
+                        <span id="results_checkPerfectNumber"></span>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-3 col-xxl-2">
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header">8. Напиши функцію, яка приймає мінімальне і максимальне значення для
+                    діапазону,і виводить тільки ті числа з діапазону,
+                    які є досконалими. Використовуй написану раніше функцію, щоб дізнатися, чи є це число досконалим.
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Perfect number in range</h5>
+                    <div class="col-8">
+                        <label for="perfect_number_in_range_min">Enter min number of range from 1 to 10000:</label>
+                        <input type="number" class="form-control" placeholder="Number" min="0" value=""
+                            id="perfect_number_in_range_min">
+                    </div>
+                    <div class="col-8">
+                        <label for="perfect_number_in_range_max">Enter max number of range from 1 to 10000:</label>
+                        <input type="number" class="form-control" placeholder="Number" min="0" value=""
+                            id="perfect_number_in_range_max">
+                    </div>
+                    <br>
+                    <div style="padding-bottom: 5px;">
+                        <button type="button" class="btn btn-warning" onclick="checkPerfectNumberRange()">push</button>
+                    </div>
+                    <p class="card-text results_checkPerfectNumber" style="font-size: 18px;">Result:
+                        <span id="results_findAmountOfPerfectNumbers"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card mb-3">
+            <h5 class="mt-0">1. Напиши всі можливі варіанти створення функцій.
+            </h5>
+            <div class="card-body">
+                <h4 class="card-title">Variant of Function</h4>
+                <h6 class="card-title"><b>1. Function Declaration (Объявление Функции)</b></h6>
+                <p class="card-text">Пример: <br>
+                    function sayHi() { <br>
+                    alert( "Привет" ); <br>
+                    } <br>
+                </p>
+                <h6 class="card-title"><b>2. Function Expression (Функциональное Выражение)</b></h6>
+                <p class="card-text">Пример: <br>
+                    let sayHi = function() { <br>
+                    alert( "Привет" ); <br>
+                    } <br>
+                </p>
+                <h6 class="card-title"><b>3. Функции-«колбэки» и анонимные функции</b></h6>
+                <p class="card-text">Пример: <br>
+                    function ask(question, yes, no) { <br>
+                    if (confirm(question)) yes() <br>
+                    else no(); <br>
+                    } <br>
+                    ask("Вы согласны?", <br>
+                    function() { alert("Вы согласились."); }, <br>
+                    function() { alert("Вы отменили выполнение."); } <br>
+                    ); <br>
+                </p>
+                <p><b>Функции-«callback»</b> - это функция переданная в качестве параметра другой функции!
+                    В примере функции объявляются прямо внутри вызова ask(...). У них нет имён, поэтому они называются
+                    <b>анонимными.</b> Такие функции недоступны снаружи ask (потому что они не присвоены переменным), но
+                    это
+                    как раз то, что
+                    нам нужно. <br>
+                </p>
+
+                <h6 class="card-title"><b>4. «Стрелочные функции» (arrow functions) =></b></h6>
+                <p>Стрелочные функции (arrow functions) позоляют сократить определение обычных функций. Стрелочные
+                    функции
+                    образуются с помощью знака стрелки =>,
+                    перед которым в скобках идут параметры функции, а после - собственно тело функции.
+                </p>
+                <p class="card-text">Пример: <br>
+                    let func = (arg1, arg2, ...argN) => expression;
+                </p>
+                <p class="card-text">Другими словами, это более короткий вариант такой записи: <br>
+                    let func = function(arg1, arg2, ...argN) { <br>
+                    return expression; <br>
+                    } <br>
+                </p>
+                <h6 class="card-title"><b>5. Рекурсия</b></h6>
+                <p>Функцию можно также вызвать внутри самой себя в программировании называется <b>рекурсией.</b>
+                    Кроме этого необходимо предусмотреть условия для выхода из рекурсии!.
+                    Это не отдельный вид создания функции, но решил упомянуть и его все же!
+                </p>
+                <p class="card-text">Пример функция рекурсивного вычисления факториала: <br>
+                    function factorial(n) { <br>
+                    if ((n === 0) || (n === 1)) <br>
+                    return 1; <br>
+                    else <br>
+                    return (n * factorial(n - 1)); <br>
+                    } <br>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
